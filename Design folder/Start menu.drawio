@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="WBTNaDHxrsLFa-jRnSCX" name="Page-1">
-        <mxGraphModel dx="1130" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1130" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -72,7 +72,7 @@
                 <mxCell id="32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=18;fontColor=#636363;fillColor=#000000;" vertex="1" parent="1">
                     <mxGeometry x="1275" y="460" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=18;fontColor=#636363;fillColor=#FFFFFF;" vertex="1" parent="1">
+                <mxCell id="37" value="Play" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=18;fontColor=#636363;fillColor=#FFFFFF;" vertex="1" parent="1">
                     <mxGeometry x="1095" y="465" width="70" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="38" value="Settings" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=18;fontColor=#636363;fillColor=#FFFFFF;" vertex="1" parent="1">
