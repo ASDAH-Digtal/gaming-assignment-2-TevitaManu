@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwfvni1iup51d"]
+
+[ext_resource type="Script" path="res://Start_Menu/node_2d.gd" id="1_2qx31"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_m3hn7"]
+
+[node name="Start Menu" type="Node2D"]
+script = ExtResource("1_2qx31")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 404.0
+offset_top = 330.0
+offset_right = 702.0
+offset_bottom = 391.0
+text = "Play"
+
+[node name="Credits" type="Button" parent="."]
+offset_left = 404.0
+offset_top = 396.0
+offset_right = 702.0
+offset_bottom = 458.0
+text = "Credits
+"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 404.0
+offset_top = 463.0
+offset_right = 702.0
+offset_bottom = 529.0
+text = "Quit"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("ImageTexture_m3hn7")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
