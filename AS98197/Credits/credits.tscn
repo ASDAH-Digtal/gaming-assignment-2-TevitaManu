@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://slpjfqnfeyxe"]
+[gd_scene load_steps=5 format=3 uid="uid://d23uqy45flate"]
 
 [ext_resource type="Texture2D" uid="uid://nn2blwriajw4" path="res://art/void/New Piskel(1).png" id="1_f0l1f"]
-[ext_resource type="Script" path="res://credits.gd" id="1_s5jq8"]
+[ext_resource type="Script" path="res://Credits/credits.gd" id="1_s5jq8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cqywk"]
 texture = ExtResource("1_f0l1f")
@@ -26,22 +26,23 @@ offset_right = 1154.0
 offset_bottom = 647.0
 text = "
 
-
 Credits 
 
- 
 
 Tile map Designer: 
 
 Tevita Manu 
 
- 
 
 Code Deisgn: 
 
 Tevita Manu 
 
- 
+
+Meanest Helper:
+
+Christian Malaitai
+
 
 Character Design: 
 
@@ -53,6 +54,6 @@ offset_left = 38.0
 offset_top = 23.0
 offset_right = 219.0
 offset_bottom = 106.0
-text = "Menu"
+text = "Start Menu"
 
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
