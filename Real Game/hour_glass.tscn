@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx5fa8gott27g"]
+
+[ext_resource type="Texture2D" uid="uid://c7e3xum8004lj" path="res://art/floortiles/hour_glass.png" id="1_1lyiq"]
+[ext_resource type="Script" path="res://hour_glass.gd" id="1_m26p7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5yvo"]
+size = Vector2(32, 32)
+
+[node name="hour_glass" type="Area2D"]
+script = ExtResource("1_m26p7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1lyiq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_b5yvo")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

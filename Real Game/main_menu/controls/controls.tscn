@@ -1,0 +1,365 @@
+[gd_scene load_steps=19 format=3 uid="uid://c5jcesaptkr50"]
+
+[ext_resource type="Script" path="res://main_menu/controls/controls.gd" id="1_yukrj"]
+[ext_resource type="Texture2D" uid="uid://r0c4pyttepbk" path="res://art/8666420.jpg" id="2_j27k1"]
+[ext_resource type="Texture2D" uid="uid://bsyi6ag8qf8y2" path="res://art/floortiles/floortiles.png" id="3_6s1dk"]
+[ext_resource type="Texture2D" uid="uid://qi2qxn4o5sy1" path="res://art/old_man/48x48.png" id="4_7bv0w"]
+[ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="5_ck8s0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cu3u6"]
+texture = ExtResource("3_6s1dk")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_conew"]
+sources/0 = SubResource("TileSetAtlasSource_cu3u6")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nqkmn"]
+texture = ExtResource("3_6s1dk")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0u6b2"]
+sources/1 = SubResource("TileSetAtlasSource_nqkmn")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_powhn"]
+texture = ExtResource("3_6s1dk")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fu4hm"]
+sources/0 = SubResource("TileSetAtlasSource_powhn")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qckl"]
+texture = ExtResource("3_6s1dk")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_anq2u"]
+sources/0 = SubResource("TileSetAtlasSource_6qckl")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hmtv"]
+atlas = ExtResource("4_7bv0w")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_keq4l"]
+atlas = ExtResource("4_7bv0w")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4w0w"]
+atlas = ExtResource("4_7bv0w")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8d1ca"]
+atlas = ExtResource("4_7bv0w")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_chm3e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hmtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_keq4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4w0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8d1ca")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="controls" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_yukrj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.576, 0.324)
+texture = ExtResource("2_j27k1")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-224, 48)
+tile_set = SubResource("TileSet_conew")
+format = 2
+layer_0/tile_data = PackedInt32Array(1114158, 262144, 2, 1179694, 262144, 3, 1114159, 327680, 2, 1179695, 327680, 3, 1114156, 262144, 2, 1179692, 262144, 3, 1114157, 327680, 2, 1179693, 327680, 3, 917553, 262144, 2, 983089, 262144, 3, 917554, 327680, 2, 983090, 327680, 3, 786481, 262144, 2, 852017, 262144, 3, 786482, 327680, 2, 852018, 327680, 3, 1114164, 262144, 2, 1179700, 262144, 3, 1114165, 327680, 2, 1179701, 327680, 3, 1114166, 262144, 2, 1179702, 262144, 3, 1114167, 327680, 2, 1179703, 327680, 3)
+
+[node name="TileMap2" type="TileMap" parent="TileMap"]
+rotation = 1.5708
+tile_set = SubResource("TileSet_0u6b2")
+format = 2
+layer_0/tile_data = PackedInt32Array(-3801071, 262145, 0, -3735535, 262145, 1, -3801070, 327681, 0, -3735534, 327681, 1)
+
+[node name="TileMap3" type="TileMap" parent="TileMap"]
+format = 2
+
+[node name="TileMap4" type="TileMap" parent="TileMap"]
+rotation = -1.5708
+tile_set = SubResource("TileSet_fu4hm")
+format = 2
+layer_0/tile_data = PackedInt32Array(2818029, 262144, 0, 2883565, 262144, 1, 2818030, 327680, 0, 2883566, 327680, 1)
+
+[node name="TileMap5" type="TileMap" parent="TileMap"]
+tile_set = SubResource("TileSet_anq2u")
+format = 2
+layer_0/tile_data = PackedInt32Array(655409, 262144, 0, 720945, 262144, 1, 655410, 327680, 0, 720946, 327680, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 336)
+sprite_frames = SubResource("SpriteFrames_chm3e")
+autoplay = "default"
+metadata/_edit_group_ = true
+
+[node name="jump_controls" type="Label" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 184.0
+offset_right = 648.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "w, up arrow, space"
+
+[node name="right_controls" type="Label" parent="."]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 298.0
+offset_right = 718.0
+offset_bottom = 324.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "d , right arrow"
+
+[node name="left_controls" type="Label" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 296.0
+offset_right = 546.0
+offset_bottom = 322.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "a , left arrow"
+
+[node name="right" type="Label" parent="."]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 320.0
+offset_right = 656.0
+offset_bottom = 351.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "Right"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="left" type="Label" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 320.0
+offset_right = 544.0
+offset_bottom = 351.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "Left"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="jump" type="Label" parent="."]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 272.0
+offset_right = 600.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "Jump"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="esc" type="Label" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 160.0
+offset_right = 558.0
+offset_bottom = 186.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "Esc for pause"
+
+[node name="start_menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("5_ck8s0")
+text = "Start Menu"
+
+[connection signal="pressed" from="start_menu" to="." method="_on_start_menu_pressed"]

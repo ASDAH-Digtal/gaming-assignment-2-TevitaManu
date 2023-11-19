@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://dil6umxwel3hi"]
+
+[ext_resource type="Script" path="res://Hud/hud.gd" id="1_fihb8"]
+[ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="2_kq5ig"]
+[ext_resource type="Texture2D" uid="uid://c7e3xum8004lj" path="res://art/floortiles/hour_glass.png" id="3_osb6n"]
+
+[node name="hud" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_fihb8")
+
+[node name="count" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 7.0
+offset_right = 81.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("2_kq5ig")
+text = "0"
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(20, 20)
+texture = ExtResource("3_osb6n")
+metadata/_edit_lock_ = true
+
+[node name="pause_menu" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -175.0
+offset_right = 125.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="pause_menu"]
+layout_mode = 2
+offset_right = 250.0
+offset_bottom = 350.0
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="pause_menu/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kq5ig")
+text = "Pause"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="pause_menu/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="resume" type="Button" parent="pause_menu/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kq5ig")
+text = "Resume"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="pause_menu/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="start_menu" type="Button" parent="pause_menu/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kq5ig")
+text = "Start Menu"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="pause_menu/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="lobby" type="Button" parent="pause_menu/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kq5ig")
+text = "Lobby"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="pause_menu/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="quit" type="Button" parent="pause_menu/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kq5ig")
+text = "Quit
+"
+
+[connection signal="pressed" from="pause_menu/VBoxContainer/HBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="pause_menu/VBoxContainer/HBoxContainer5/start_menu" to="." method="_on_start_menu_pressed"]
+[connection signal="pressed" from="pause_menu/VBoxContainer/HBoxContainer2/lobby" to="." method="_on_lobby_pressed"]
+[connection signal="pressed" from="pause_menu/VBoxContainer/HBoxContainer4/quit" to="." method="_on_quit_pressed"]
