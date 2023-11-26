@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://c7e3xum8004lj" path="res://art/floortiles/hour_glass.png" id="4_y5tte"]
 [ext_resource type="Texture2D" uid="uid://dgwud2la7kg80" path="res://art/floortiles/sign.png" id="5_o1how"]
 [ext_resource type="Texture2D" uid="uid://c3ltdoe7y7nie" path="res://art/fireworksfireworks.png" id="6_0yrj7"]
+[ext_resource type="Texture2D" uid="uid://bq7wahbih6rch" path="res://art/citizens_folder/citizen1.png" id="7_4jdcf"]
 [ext_resource type="PackedScene" uid="uid://bruksy0fhcbpy" path="res://player/player.tscn" id="7_5emhi"]
-[ext_resource type="Texture2D" uid="uid://bq7wahbih6rch" path="res://art/Citizens_1/citizen1.png" id="7_niilx"]
 [ext_resource type="Script" path="res://room_1/room_1c/room_1c_door.gd" id="8_1eh6d"]
 [ext_resource type="Script" path="res://room_1/room_1a/npc_advice.gd" id="8_5ccfo"]
 [ext_resource type="PackedScene" uid="uid://dx5fa8gott27g" path="res://hour_glass.tscn" id="9_85aux"]
@@ -269,19 +269,19 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_to16w"]
-atlas = ExtResource("7_niilx")
+atlas = ExtResource("7_4jdcf")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_acfot"]
-atlas = ExtResource("7_niilx")
+atlas = ExtResource("7_4jdcf")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_apvhi"]
-atlas = ExtResource("7_niilx")
+atlas = ExtResource("7_4jdcf")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m4jxc"]
-atlas = ExtResource("7_niilx")
+atlas = ExtResource("7_4jdcf")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8qy6j"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://0dbu1hq15ul8"]
+[gd_scene load_steps=7 format=3 uid="uid://0dbu1hq15ul8"]
 
 [ext_resource type="Script" path="res://room_1/history/history_marathon_room_1.gd" id="1_l53dg"]
 [ext_resource type="Texture2D" uid="uid://nn2blwriajw4" path="res://art/void/New Piskel(1).png" id="2_or20v"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="3_nmtj0"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="4_rhwmp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1vrqf"]
 texture = ExtResource("2_or20v")
@@ -67,5 +68,8 @@ Sources:
 https://edition.cnn.com/2023/10/08/sport/kelvin-kiptum-mens-marathon-world-record-chicago-spt-intl/index.html
 https://www.bbc.co.uk/news/av/world-us-canada-27025249
 https://www.njrrc.org/history-of-marathons/"
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_rhwmp")
 
 [connection signal="pressed" from="lobby" to="." method="_on_lobby_pressed"]

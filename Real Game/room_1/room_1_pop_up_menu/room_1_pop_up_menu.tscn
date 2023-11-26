@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bskm7yhhfj13n"]
+[gd_scene load_steps=4 format=3 uid="uid://bskm7yhhfj13n"]
 
 [ext_resource type="Script" path="res://room_1/room_1_pop_up_menu/room_1_pop_up_menu.gd" id="1_r0h1m"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="2_um3oo"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="3_1ehnw"]
 
 [node name="pop_menu" type="Control"]
 layout_mode = 3
@@ -62,5 +63,8 @@ alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_um3oo")
 text = "Play?"
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_1ehnw")
 
 [connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

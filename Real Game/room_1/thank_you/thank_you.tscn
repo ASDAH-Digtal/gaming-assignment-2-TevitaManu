@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://cnrc27nfrh0mn"]
+[gd_scene load_steps=15 format=3 uid="uid://cnrc27nfrh0mn"]
 
 [ext_resource type="Script" path="res://room_1/thank_you/thank_you.gd" id="1_hwt4h"]
 [ext_resource type="Texture2D" uid="uid://nn2blwriajw4" path="res://art/void/New Piskel(1).png" id="2_wfcxq"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="3_n50p0"]
 [ext_resource type="Texture2D" uid="uid://c3ltdoe7y7nie" path="res://art/fireworksfireworks.png" id="4_of8cl"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="5_ks8wu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcokm"]
 texture = ExtResource("2_wfcxq")
@@ -142,6 +143,9 @@ layout_mode = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_n50p0")
 text = "Start Menu"
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ks8wu")
 
 [connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/learn" to="." method="_on_learn_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer2/start_menu" to="." method="_on_start_menu_pressed"]

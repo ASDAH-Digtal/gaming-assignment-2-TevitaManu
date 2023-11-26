@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbb2scvl6nnf7"
-path="res://.godot/imported/citizen2.png-e2845e44210b1700fb47c902e8ad25f7.ctex"
+uid="uid://byrcpd3mn65o7"
+path="res://.godot/imported/bone_teeth.png-f19c49fd3b65c38b098c09f635bcbf20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Citizens_1/citizen2.png"
-dest_files=["res://.godot/imported/citizen2.png-e2845e44210b1700fb47c902e8ad25f7.ctex"]
+source_file="res://art/new art/bone_teeth.png"
+dest_files=["res://.godot/imported/bone_teeth.png-f19c49fd3b65c38b098c09f635bcbf20.ctex"]
 
 [params]
 

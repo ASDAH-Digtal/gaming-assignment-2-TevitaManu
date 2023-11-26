@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://blh12gdd13mtu"]
+[gd_scene load_steps=5 format=3 uid="uid://blh12gdd13mtu"]
 
 [ext_resource type="Script" path="res://room_1/room_1a/room_1a_menu.gd" id="1_wwqmj"]
 [ext_resource type="Texture2D" uid="uid://bqjf7sh2dkddy" path="res://art/free-city-backgrounds-pixel-art/city 1/10.png" id="2_dcdqt"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="4_3j832"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="5_n5j0r"]
 
 [node name="room_1_menu" type="Control"]
@@ -72,6 +73,9 @@ alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_n5j0r")
 text = "Lobby"
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_3j832")
 
 [connection signal="pressed" from="Panel/VBoxContainer/play/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/lobby/lobby" to="." method="_on_lobby_pressed"]

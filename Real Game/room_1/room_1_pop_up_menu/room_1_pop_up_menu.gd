@@ -1,5 +1,6 @@
 extends Control
 
+@onready var button_click : AudioStreamPlayer2D = $button_click
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,6 +13,8 @@ func _process(delta):
 
 
 func _on_button_pressed():
+	button_click.play()
+	await button_click.finished
 	get_tree().change_scene_to_file("res://room_1/room_1a/room_1a_menu.tscn")
 
 

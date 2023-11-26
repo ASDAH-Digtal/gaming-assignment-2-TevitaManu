@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kahyk26ue3f2"
-path="res://.godot/imported/hour_glass.png-e091076c9efffc72b057970bacbc0db5.ctex"
+uid="uid://cbb2scvl6nnf7"
+path="res://.godot/imported/citizen2.png-abe3fa57dd336461b51640e20f5c92e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/floortiles/hour_glass.png"
-dest_files=["res://.godot/imported/hour_glass.png-e091076c9efffc72b057970bacbc0db5.ctex"]
+source_file="res://art/citizens_folder/citizen2.png"
+dest_files=["res://.godot/imported/citizen2.png-abe3fa57dd336461b51640e20f5c92e6.ctex"]
 
 [params]
 

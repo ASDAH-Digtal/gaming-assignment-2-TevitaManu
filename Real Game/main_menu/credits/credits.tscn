@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dvd1vnog6nhbw"]
+[gd_scene load_steps=7 format=3 uid="uid://dvd1vnog6nhbw"]
 
 [ext_resource type="Script" path="res://main_menu/credits/credits.gd" id="1_3x4d4"]
 [ext_resource type="Texture2D" uid="uid://nn2blwriajw4" path="res://art/void/New Piskel(1).png" id="1_34ajy"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="3_1wp27"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="4_85eir"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_03fhh"]
 texture = ExtResource("1_34ajy")
@@ -24,7 +25,7 @@ layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 1, 65536, 0, 65537, 6
 
 [node name="Label" type="Label" parent="."]
 offset_right = 1152.0
-offset_bottom = 640.0
+offset_bottom = 54.0
 theme_override_fonts/font = ExtResource("3_1wp27")
 text = "Credits 
 
@@ -48,6 +49,8 @@ Nielson
 Micah
 Grace
 
+Why:
+This is a school project
 "
 horizontal_alignment = 1
 
@@ -58,5 +61,8 @@ offset_right = 129.0
 offset_bottom = 40.0
 theme_override_fonts/font = ExtResource("3_1wp27")
 text = "Start Menu"
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_85eir")
 
 [connection signal="pressed" from="Start Menu" to="." method="_on_start_menu_pressed"]

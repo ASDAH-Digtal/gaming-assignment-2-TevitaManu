@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c55flfdpjcomk"]
+[gd_scene load_steps=8 format=3 uid="uid://c55flfdpjcomk"]
 
 [ext_resource type="Script" path="res://main_menu/start_menu/start_menu.gd" id="1_tvapa"]
 [ext_resource type="Script" path="res://main_menu/ParallaxBackground.gd" id="2_6r0a1"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cw2n30c60modh" path="res://art/floortiles/museum.png" id="4_2yk08"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="5_fdnta"]
 [ext_resource type="AudioStream" uid="uid://cvxnpe8ciehjc" path="res://music/lobby_music.mp3" id="6_k8eo2"]
+[ext_resource type="AudioStream" uid="uid://b50j2lvpyirqk" path="res://music/button_click.mp3" id="7_4bih8"]
 
 [node name="start_menu" type="Control"]
 layout_mode = 3
@@ -132,6 +133,9 @@ text = "Quit"
 [node name="background_music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_k8eo2")
 autoplay = true
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_4bih8")
 
 [connection signal="pressed" from="Panel/VBoxContainer/start/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/credits/credits" to="." method="_on_credits_pressed"]
