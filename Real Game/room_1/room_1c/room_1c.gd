@@ -17,7 +17,7 @@ func _process(delta):
 		$Player.position.y = 96
 		death_sound.play()
 		
-	if Global.score == 3:
+	if Global.score <= 3:
 		room_1c_door.monitoring = true
 
 

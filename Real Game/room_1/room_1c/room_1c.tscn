@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://room_1/room_1c/room_1c.gd" id="1_7v4gi"]
 [ext_resource type="Texture2D" uid="uid://cs3wcjfp2mqqe" path="res://art/free-city-backgrounds-pixel-art/city 2/10.png" id="2_cmnds"]
 [ext_resource type="Texture2D" uid="uid://bsyi6ag8qf8y2" path="res://art/floortiles/floortiles.png" id="3_hph21"]
-[ext_resource type="Texture2D" uid="uid://c7e3xum8004lj" path="res://art/floortiles/hour_glass.png" id="4_y5tte"]
+[ext_resource type="Texture2D" uid="uid://kahyk26ue3f2" path="res://art/floortiles/hour_glass.png" id="4_y5tte"]
 [ext_resource type="Texture2D" uid="uid://dgwud2la7kg80" path="res://art/floortiles/sign.png" id="5_o1how"]
 [ext_resource type="Texture2D" uid="uid://c3ltdoe7y7nie" path="res://art/fireworksfireworks.png" id="6_0yrj7"]
 [ext_resource type="Texture2D" uid="uid://bq7wahbih6rch" path="res://art/citizens_folder/citizen1.png" id="7_4jdcf"]

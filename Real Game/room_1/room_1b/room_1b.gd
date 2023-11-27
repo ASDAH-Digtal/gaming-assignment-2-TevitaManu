@@ -7,7 +7,7 @@ extends Node2D
 func _ready():
 	Global.score = 0
 	room_1b_door.monitoring = false
-
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -17,7 +17,8 @@ func _process(delta):
 		$Player.position.y = 81
 		death_sound.play()
 		
-	if Global.score == 8:
+	print(Global.score)	
+	if Global.score <= 8:
 		room_1b_door.monitoring = true
 		
 

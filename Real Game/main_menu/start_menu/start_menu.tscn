@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cw2n30c60modh" path="res://art/floortiles/museum.png" id="4_2yk08"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="5_fdnta"]
 [ext_resource type="AudioStream" uid="uid://cvxnpe8ciehjc" path="res://music/lobby_music.mp3" id="6_k8eo2"]
-[ext_resource type="AudioStream" uid="uid://b50j2lvpyirqk" path="res://music/button_click.mp3" id="7_4bih8"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="7_4bih8"]
 
 [node name="start_menu" type="Control"]
 layout_mode = 3

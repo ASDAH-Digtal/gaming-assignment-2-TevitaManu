@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bpqjgb0bm1b14" path="res://art/floortiles/flag.png" id="3_7tg2h"]
 [ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="3_lbfxn"]
 [ext_resource type="PackedScene" uid="uid://bruksy0fhcbpy" path="res://player/player.tscn" id="4_ugsq3"]
-[ext_resource type="Texture2D" uid="uid://c7e3xum8004lj" path="res://art/floortiles/hour_glass.png" id="5_86emd"]
+[ext_resource type="Texture2D" uid="uid://kahyk26ue3f2" path="res://art/floortiles/hour_glass.png" id="5_86emd"]
 [ext_resource type="Texture2D" uid="uid://dk8q8wcevjpyc" path="res://art/citizens_folder/citizen3-alt.png" id="5_mlot6"]
 [ext_resource type="Script" path="res://room_1/room_1b/room_1b_door.gd" id="6_hm8vf"]
 [ext_resource type="Script" path="res://room_1/room_1a/npc_advice.gd" id="6_wljtc"]
