@@ -1,0 +1,143 @@
+[gd_scene load_steps=8 format=3 uid="uid://c55flfdpjcomk"]
+
+[ext_resource type="Script" path="res://main_menu/start_menu/start_menu.gd" id="1_tvapa"]
+[ext_resource type="Script" path="res://main_menu/ParallaxBackground.gd" id="2_6r0a1"]
+[ext_resource type="Texture2D" uid="uid://12eqs2gaipgc" path="res://art/9259344.jpg" id="3_ipwla"]
+[ext_resource type="Texture2D" uid="uid://cw2n30c60modh" path="res://art/floortiles/museum.png" id="4_2yk08"]
+[ext_resource type="FontFile" uid="uid://btkobnfcgr51i" path="res://art/8-bit-operator/8bitOperatorPlus-Bold.ttf" id="5_fdnta"]
+[ext_resource type="AudioStream" uid="uid://cvxnpe8ciehjc" path="res://music/lobby_music.mp3" id="6_k8eo2"]
+[ext_resource type="AudioStream" uid="uid://ba1ao5hohy24r" path="res://music/button_click.mp3" id="7_4bih8"]
+
+[node name="start_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_tvapa")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("2_6r0a1")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1125, 0)
+
+[node name="background" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(577.5, 325)
+scale = Vector2(0.383, 0.323)
+texture = ExtResource("3_ipwla")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -110.0
+offset_right = 95.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="colour_rec" type="ColorRect" parent="Panel"]
+light_mask = 524289
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -110.0
+offset_right = 95.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(0.247059, 0.6, 0.411765, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -110.0
+offset_right = 95.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="title" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="museum" type="Sprite2D" parent="Panel/VBoxContainer/title"]
+position = Vector2(104.5, -8)
+texture = ExtResource("4_2yk08")
+offset = Vector2(0, 15)
+
+[node name="title" type="Label" parent="Panel/VBoxContainer/title"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_fdnta")
+theme_override_font_sizes/font_size = 28
+text = "Time Muesem"
+
+[node name="start" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="start" type="Button" parent="Panel/VBoxContainer/start"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_fdnta")
+text = "Start"
+
+[node name="credits" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="credits" type="Button" parent="Panel/VBoxContainer/credits"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_fdnta")
+text = "Credits"
+
+[node name="controls" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="controls" type="Button" parent="Panel/VBoxContainer/controls"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_fdnta")
+text = "Controls"
+
+[node name="quit" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="quit" type="Button" parent="Panel/VBoxContainer/quit"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_fdnta")
+text = "Quit"
+
+[node name="background_music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_k8eo2")
+autoplay = true
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_4bih8")
+
+[connection signal="pressed" from="Panel/VBoxContainer/start/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/credits/credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/controls/controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/quit/quit" to="." method="_on_quit_pressed"]

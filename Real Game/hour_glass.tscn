@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://dx5fa8gott27g"]
+
+[ext_resource type="Texture2D" uid="uid://kahyk26ue3f2" path="res://art/floortiles/hour_glass.png" id="1_1lyiq"]
+[ext_resource type="Script" path="res://hour_glass.gd" id="1_m26p7"]
+[ext_resource type="AudioStream" uid="uid://b4uericc5gsqh" path="res://music/collect_noise.wav" id="3_uvnwf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xtqg"]
+atlas = ExtResource("1_1lyiq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_petlc"]
+atlas = ExtResource("1_1lyiq")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_egufl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xtqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_petlc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5yvo"]
+size = Vector2(32, 32)
+
+[node name="hour_glass" type="Area2D"]
+script = ExtResource("1_m26p7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_egufl")
+autoplay = "default"
+frame_progress = 0.458354
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_b5yvo")
+
+[node name="collect_noise" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_uvnwf")
+pitch_scale = 1.33
+max_distance = 9000.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
